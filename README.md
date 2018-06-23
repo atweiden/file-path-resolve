@@ -22,12 +22,12 @@ my $script = 'data/script.lua';
 File::Path::Resolve.relative($script, $conkyrc).perl.say;
 # "/home/user/.config/conky/data/script.lua".IO
 
-$*CWD.perl.say;
-# /home/user/Documents/all
+$*CWD.say;
+# "/home/user/Documents/all".IO
 
 my $dots = '../some/./document';
 File::Path::Resolve.absolute($dots).perl.say;
-# /home/user/Documents/some/document
+# "/home/user/Documents/some/document".IO
 ```
 
 
