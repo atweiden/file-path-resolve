@@ -69,7 +69,7 @@ multi sub absolute(Str:D $path where &home-path --> IO::Path:D)
 multi sub absolute(Str:D $path where &home-path-plus --> IO::Path:D)
 {
     my Str:D $subst = sprintf(Q{%s/}, $*HOME);
-    my IO::Path:D $resolve = $path.subst(/^'~/'/, $subst).IO.resolve;
+    my IO::Path:D $resolve = $path.subst(/^'~''/'+/, $subst).IO.resolve;
 }
 
 multi sub absolute(Str:D $path --> IO::Path:D)
