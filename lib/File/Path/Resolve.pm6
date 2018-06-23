@@ -15,27 +15,27 @@ File::Path::Resolve
 Method C<absolute> runs C<IO.resolve> on paths to produce absolute paths
 after expanding leading C<~/> to C<$*HOME>.
 
-Rakudo considers paths starting with a C<~> to be relative paths:
+Rakudo considers paths starting with a C<~/> to be relative paths:
 
     '~'.IO.is-relative.so       # True
     '~/'.IO.is-relative.so      # True
     '~/hello'.IO.is-relative.so # True
 
-This method expands the leading C<~> to C<$*HOME>. Thus, it does not
-consider paths beginning with C<~> to be relative paths.
+This method expands the leading C<~/> to C<$*HOME>. Thus, it does not
+consider paths beginning with C<~/> to be relative paths.
 
 =head2 C<relative($path, $base)>
 
-Method C<relative> resolves I<relative> a path (C<$path>) relative to
-the base directory of a file (C<$base>).
+Method C<relative> resolves a path (C<$path>) relative to the base
+directory of a file (C<$base>).
 
 This method is intended for config files which allow users to specify
 relative paths. When relative paths are given in a config file, these
 relative paths should be resolved I<relative to the config file's base
 directory> for DWIM.
 
-Like method C<absolute>, method C<relative> expands leading C<~>s to
-C<$*HOME>. Thus, it does not consider paths beginning with C<~> to be
+Like method C<absolute>, method C<relative> expands leading C<~/>s to
+C<$*HOME>. Thus, it does not consider paths beginning with C<~/> to be
 relative paths.
 =end pod
 
