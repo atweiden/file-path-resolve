@@ -113,4 +113,4 @@ multi sub relative(Str:D $path, Str:D $ --> IO::Path:D)
 
 # end method relative }}}
 
-# vim: set filetype=perl6 foldmethod=marker foldlevel=0:
+# vim: set filetype=raku foldmethod=marker foldlevel=0:

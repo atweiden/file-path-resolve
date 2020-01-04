@@ -30,4 +30,4 @@ subtest(qq{'~/Downloads/data/script.lua', 't/data/conky/conkyrc'}, {
     is($path, $expected);
 });
 
-# vim: set filetype=perl6 foldmethod=marker foldlevel=0:
+# vim: set filetype=raku foldmethod=marker foldlevel=0:

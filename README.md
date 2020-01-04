@@ -35,7 +35,7 @@ File::Path::Resolve.absolute($dots).perl.say;
 
 ### Dependencies
 
-- Rakudo Perl 6
+- Raku
 
 
 Licensing

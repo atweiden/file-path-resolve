@@ -26,4 +26,4 @@ subtest(Q{'~/.config/conky/conkyrc'}, {
     is($path, $expected);
 });
 
-# vim: set filetype=perl6 foldmethod=marker foldlevel=0:
+# vim: set filetype=raku foldmethod=marker foldlevel=0:
