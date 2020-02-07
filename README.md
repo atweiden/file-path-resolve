@@ -7,7 +7,7 @@ Resolve a path relative to another file.
 
 ## Synopsis
 
-```perl6
+```raku
 use File::Path::Resolve;
 
 my $tilde = '~';
